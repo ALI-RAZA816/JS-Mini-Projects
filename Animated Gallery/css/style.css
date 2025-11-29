@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.container .img{
+    height: 500px;
+    width: 100px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: width .40s ease;
+}
+
+.container .img:hover{
+    width: 120px;
+}
+
+
+.container .img.active{
+    width: 570px;
+}
+
+.container .img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}

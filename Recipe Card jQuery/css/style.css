@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: #DDE4EF; 
+}
+
+.main-container{
+    margin: 1rem 0;
+    width: 100%;
+    max-width:850px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.50);
+}
+
+#hero-banner{
+    position: relative;
+}
+
+#hero-banner img{
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#hero-banner h1{
+    position:absolute;
+    bottom:10px;
+    left:40px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+#stat-col{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #b8b5b5;
+    background-color:#f5f5f5;
+}
+
+#stat-col .box{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#stat-col .box i{
+    color: #E67E22;
+    font-size: 1.9rem;
+    margin-bottom: .5rem;
+}
+
+#stat-col .box span{
+    display: inline-block;
+    margin: 0;
+    color: #9c9c9c;
+    font-size:15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+#stat-col .box span:last-child{
+    color: #495057;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+#ingredients{
+    padding: 50px 50px 0 50px;
+}
+
+#instructions {
+    padding:50px 50px 50px 0;
+}
+
+#ingredients > h1,
+#instructions > h1{
+    color: #E67E22;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position:relative;
+}
+
+#ingredients > h1::before,
+#instructions > h1::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom:-12px;
+    width: 100%;
+    height: 2px;
+    background-color: #F1C40F;
+}
+
+#ingredients > h1 i,
+#instructions > h1 i{
+    font-size: 1.6rem;
+    margin: 0 .5rem;
+}
+
+#ingredients-list,
+#instructions-list{
+    padding-top: 2rem;
+}
+
+#ingredients-list .box,
+#instructions-list .box{
+    display: flex;
+    flex-direction: row;
+    margin: .6rem 0;
+    padding: .3rem 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+#ingredients-list .box .dot,
+#instructions-list .box .dot{
+    height: 20px;
+    margin: 0 .6rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color:#F1C40F;
+}
+
+#instructions-list .box .dot{
+    height: 30px;
+    aspect-ratio: 1;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#ingredients-list .box span,
+#instructions-list .box span{
+    color: #333;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+#nutrions-container{
+    background-color:#f5f5f5;
+}
+
+#btn-box button{
+    height:38px;
+    width: max-content;
+    border: none;
+    outline: none;
+    background:#E67E22;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 20px;
+    font-size: .9rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: .40s ease;
+    box-shadow: 0 2px 5px #E67E22;
+}
+
+#btn-box button:hover{
+    transform: translateY(-5px);
+    background-color: #bd681e;
+}
+
+#nutrions-boxes{
+    padding:0 3rem 1rem 3rem;
+}
+
+#nutrions-boxes > h1{
+    color: #E67E22;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: relative;
+    padding:1.5rem 0 1.5rem 1rem;
+}
+
+
+#nutrions-boxes > h1::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #F1C40F;
+}
+
+#nutrions-boxes > h1 i{
+    margin: 0 .3rem;
+    font-size: 1.8rem;
+}
+
+.nutrions{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:  1rem 0;
+}
+
+.nutrions .box {
+    height: 80px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fff;
+    transition: .40s ease;
+    box-shadow: 0 0 10px rgba(204, 204, 204,.50);
+}
+
+.nutrions .box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(204, 204, 204,.50);
+}
+
+
+.nutrions .box span:first-child {
+    color: #E67E22;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nutrions .box span:last-child{
+    font-size:15px;
+    color: #495057;
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: Arial,sans-serif; */
+    background-color: #e0e5ec;
+    font-family: "Parisienne", serif;
+}
+
+.calculator{
+    border-radius: 20px;
+    padding:20px;
+    box-shadow: 9px 9px 16px #acb1c6,
+    -9px -9px 16px #ffffff;
+    margin: 0 20px;
+}
+
+.input h1{
+    position: absolute;
+    top:20px;
+    left:65px;
+    font-size: 50px;
+    color: rgb(51, 51, 51,.40);
+    display: none;
+}
+
+.input input{
+    height: 70px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    outline: none;
+    outline: none;
+    border-radius: 10px;
+    background: #f3f4f6;
+    text-align: right;
+    padding: 0 15px;
+    font-size: 35px;
+    color: #333;
+    box-shadow: inset 6px 6px 12px #acb1c6,
+    inset -6px -6px 12px #ffffff;
+    margin-bottom: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    column-gap: 13px;
+}
+
+.buttons button{
+    height: 70px;
+    width: 100%;
+    max-width: 65px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #f3f4f6;
+    font-size: 25px;
+    box-shadow: inset 6px 6px 12px #acb1c6,
+    inset -6px -6px 12px #ffffff;
+    transition: all .30s;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    box-shadow: inset 3px 3px 10px #acb1c6,
+    inset -3px -3px 10px #ffffff;
+}
+
+.buttons #zero{
+    width: 100%;
+    max-width: 145px;
+}
+
+
+@media only screen and (max-width:450px) {
+    body{
+        display: flex;
+        /* justify-content: flex-end; */
+        align-items: flex-end;
+    }
+    .calculator{
+        box-shadow:none;
+        padding:0 !important;
+    }
+
+    
+.buttons button{
+    box-shadow:6px 6px 12px #acb1c6,
+    inset -6px -6px 12px #ffffff;
+    height: 60px;
+}
+
+.input{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 12px #acb1c6,
+    inset -6px -6px 12px #ffffff;
+    margin-bottom: 20px;
+}
+
+.input h1{
+    display: block;
+}
+
+.input input{
+    background: none;
+    box-shadow:none;
+    margin-bottom: 0 !important;
+}
+
+}

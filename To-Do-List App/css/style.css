@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: #4141ce;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.container{
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius:5px;
+    padding: 10px 15px;
+    margin: 100px auto;
+    min-height:150px;
+}
+
+
+.container h1{
+    color: #4141ce;
+    font-size:25px;
+    line-height: 50px;
+}
+
+.container h1 i{
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.field{
+    width: 100%;
+    border-radius: 20px;
+    height: 45px;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    background:none;
+    outline: none;
+    padding: 0 15px;
+    color: #6e6b6b;
+    font-size: 15px;
+}
+
+.field button{
+    min-width:120px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    height: 100%;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: rgb(247, 93, 37);
+}
+
+#result{
+    margin-top: 25px;
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#result li{
+    list-style-type: none;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    position: relative;
+    padding: 10px 0 10px 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#result li i{
+    float: right;
+    height: 25px;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    transition: transform .10s;
+}
+
+#result li i:hover{
+    background: #bdbdbd;
+}
+
+#result li::before{
+    height: 28px;
+    aspect-ratio: 1;
+    position: absolute;
+    content: "";
+    border: 1px solid #bebebe;
+    border-radius: 50%;
+    top:3px;
+    left: 0;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+#result li.cross::before{
+    background-image: url('../images/mark.PNG');
+    /* background-image: url('../images/cross.PNG'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#result li.checked{
+    text-decoration: line-through;
+    color: #6e6b6b;
+}
+
+#result::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+
+#result::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #e0e0e0;
+}
+
+#error span{
+    margin: 8px 0;
+    display: inline-block;
+}

@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: #41b9ce;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celender{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 200px;
+    width:280px;
+}
+
+.right{
+    text-align: center;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right .date{
+    font-weight: 550;
+    color: #333;
+    font-size:55px;
+}
+.right .day{
+    font-size: 20px;
+    font-weight: 550;
+    color: #333;
+}
+.left{
+    background:lightcoral;
+    width:120px;
+    flex: none;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left .month{
+    font-size:25px;
+    color: #fff;
+    line-height: 35px;
+}
+
+.left .year{
+    color: #fff;
+    font-weight: 550;
+    font-size: 20px;
+}

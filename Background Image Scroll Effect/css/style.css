@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: azure;
+}
+
+
+.img{
+    height: 100vh;
+    width:100%;
+    background-image: url('../images/pexels-sohi-807598.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content{
+    padding: 20px 50px;
+}
+
+.content h1{
+    font-size: 50px;
+    color: #333;
+}
+
+.content p{
+    color: #333;
+    font-size: 17px;
+    margin: 40px 0;
+}
+

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: azure;
+}
+
+
+.card-wrapper{
+    margin:auto;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    justify-content: center;
+    max-width: 1000px;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.card-wrapper .box{
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    box-shadow:  0 0 15px rgba(0 ,0 ,0,.40);
+}
+
+.card-wrapper .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-wrapper .box .content{
+    position: relative;
+    padding: 15px;
+    background-color:rgb(255, 255, 255,.80);
+    z-index: 10;
+    bottom: 0;
+    padding-top:130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    transform: translateY(-80px);
+    transition:transform .40s ease;
+}
+
+
+.card-wrapper .box:hover .content{
+    transform: translateY(-85px);
+}
+
+.card-wrapper .box .content::before{
+    position: absolute;
+    content: "";
+   background-color:rgb(255, 255, 255,.80);
+    left: 75px;
+    top: -20px;
+    width:50%;
+    height: 20px;
+}
+
+.card-wrapper .box .content img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    position: absolute;
+    bottom:50%;
+    z-index: 10;
+    filter: drop-shadow(5px 5px 3px rgba(0 ,0 ,0,.40) );
+}
+
+.flight-detail{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px dotted #333;
+    padding: 8px 0;
+}
+
+.flight-detail i{
+    font-size:20px;
+    color: #333;
+}
+
+.flight-detail div span{
+    color: #333;
+    font-weight: 550;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.flight-detail h1{
+    text-transform: uppercase;
+    color: #3AA7D4;
+}
+
+.card-wrapper .content .button{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.card-wrapper .content .button span{
+    display:block;
+    text-align: center;
+}
+
+.card-wrapper .content .button span:first-child{
+    color: #3AA7D4;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.card-wrapper .content .button span:last-child{
+    font-weight: 550;
+    color: #333;
+}
+
+.card-wrapper .content .button button{
+    height: 35px;
+    width:max-content;
+    color: #fff;
+    background: #3AA7D4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 25px;
+}
+
+.card-wrapper .box.active .content{
+    transform: translateY(-300px);
+}

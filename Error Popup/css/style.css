@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    background: pink;
+    font-family: sans-serif;
+    color: #333;
+    overflow: hidden;
+}
+
+.buttons{
+    margin: 50px 0 0 50px;
+}
+
+.buttons button{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #333;
+    cursor: pointer;
+}
+
+.sucessnote,
+.errornote,
+.invalidnote{
+    height: 70px;
+    width: 300px;
+    background: #fff;
+    display: flex;
+    text-align: center;
+    line-height: 70px;
+    font-size:18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    margin-right:50px;
+    position: absolute;
+    bottom:20px;
+    right:-100%;
+    transition: right .20s ease;
+}
+
+.sucessnote.active,
+.errornote.active,
+.invalidnote.active{
+    right:0;
+}
+
+.sucessnote::after,
+.errornote::after,
+.invalidnote::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: green;
+}
+
+.sucessnote.active::after,
+.errornote.active::after,
+.invalidnote.active::after{
+    animation-name: progress;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0.25s;
+}
+
+@keyframes progress {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width:0;
+    }
+}
+
+.errornote::after{
+    background: red;
+}
+
+.invalidnote::after{
+    background: rgb(202, 202, 64);
+}
+
+.sucessnote i,
+.errornote i,
+.invalidnote i{
+    line-height: 70px;
+    font-size: 24px;
+    color: green;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.errornote i{
+    color: red;
+}
+
+.invalidnote i{
+    color: rgb(202, 202, 64);
+}

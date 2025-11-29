@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4169e1;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    user-select: none;
+    height: 45px;
+    width: 230px;
+    cursor: pointer;
+}
+
+.field i{
+    transform: rotate(180deg);
+}
+
+
+.field.rotate i{
+    transform: rotate(0deg);
+}
+
+
+.lists{
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 15px 0;
+    display: none;
+}
+
+.lists.active{
+    display: block;
+}
+
+
+.lists ul li{
+    display:flex;
+    padding: 5px 0;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.lists ul li i{
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+.lists ul li:first-child i{
+    color: #4169e1;
+}
+
+.lists ul li:nth-child(2) i{
+    color: red;
+}
+
+.lists ul li:nth-child(4) i{
+    color: lightgreen;
+}
+
+.lists ul li:nth-child(5) i{
+    color: skyblue;
+}
+
+.lists ul li:nth-child(6) i{
+    color: red;
+}

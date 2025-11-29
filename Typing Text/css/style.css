@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    font-style: italic;
+    position: relative;
+    color: red;
+    line-height: 55px;
+}
+
+h1::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background: red;
+}

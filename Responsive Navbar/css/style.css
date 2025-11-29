@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgb(37, 50, 58);
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(0, 132, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    height: 70px;
+}
+
+header h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-flex;
+    padding: 25px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    transition: .4s;
+}
+
+
+header ul li a i{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+header ul li:hover a i{
+    transform: rotate(180deg);
+}
+
+header ul li:hover{
+    background: rgb(255,255,255,.20);
+}
+
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul .menu > .menu-list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    transition: .4s;
+    background: rgba(12, 12, 12,.20);
+    display: none;
+}
+
+header ul .menu:hover > .menu-list{
+    display: block;
+}
+
+header ul .menu > .menu-list li{
+    padding:15px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-top: 1px solid rgb(255,255,255,.20);
+}
+
+header ul li.menu > ul.menu-list li a{
+    width: 100%;
+}
+
+header ul li.menu > ul.menu-list li:hover{
+    background: rgb(0, 132, 255);
+}
+
+.sub-menu {
+    position: relative;
+}
+
+.sub-menu > .sub-menu-list{
+    position: absolute;
+    right: -200px;
+    top: -1px;
+    width:200px;
+    display: none;
+    background: rgba(12, 12, 12,.20);
+}
+
+.sub-menu:hover > .sub-menu-list{
+    display: block;
+}
+
+.sub-menu a i{
+    position: absolute;
+    right:20px;
+    transform: rotate(0deg) !important;
+}
+
+.sub-menu:hover a i{
+    transform: rotate(180deg) !important;
+}
+
+.sub-menu #right-menu{
+    right:200px;
+}
+
+.toggleBtn{
+    display: none;
+}
+
+
+@media screen and (max-width:1000px) {
+    header ul {
+        position: absolute;
+        top: 100%;
+        right:-100%;
+        height: 100vh;
+        width: 300px;
+        transition: .4s;
+        background-color: rgb(0, 132, 255);
+    }
+    
+    header ul li:hover{
+        background:none;
+    }
+
+    header ul li{
+        display: block;
+    }
+    header ul li.menu{
+        position: relative;
+    }
+    header ul li.menu > ul.menu-list,
+    .sub-menu > .sub-menu-list{
+        position: static;
+        top:0;
+        left: 0;
+        transition: .4s;
+        height: auto;
+        width: auto;
+        padding: 15px 0;
+        background: none;
+    }
+    
+    header ul li.menu > ul.menu-list li{
+        border: none;
+        width: auto;
+        text-align: left;
+        padding: 10px 0;
+    }
+    header ul li.menu > ul.menu-list li:hover{
+        background: none;
+    }
+
+    header ul li a i{
+        float: right;
+    }
+
+    .sub-menu > .sub-menu-list>li{
+        padding-left:40px !important;
+    }
+    
+    .toggleBtn{
+        display: block;
+    }
+    
+    .toggleBtn i{
+        font-size:25px;
+        color: #fff;
+        cursor: pointer;
+    }
+    header .navbar.active{
+        right: 0;
+    }
+}

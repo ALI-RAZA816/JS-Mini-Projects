@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    color: #fff;
+    perspective: 90px;
+}
+
+.container div{
+    transform-style:preserve-3d;
+    margin:0 5px;
+    display: inline-block;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: finite;
+    font-size: 20px;
+}
+
+.button{
+    display: flex;
+    margin:  20px 0;
+}
+
+.button button{
+    height: 40px;
+    min-width: max-content;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 15px;
+    margin:  0 10px;
+    border-radius: 5px;
+}
+
+@keyframes flip {
+    0%{
+        transform: rotateX(0deg);
+    }50%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}
+
+
+@keyframes jump {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.container .li1{
+    animation-delay:.5s;
+}
+.container .li2{
+    animation-delay: .6s;
+}
+.container .li3{
+    animation-delay: .7s;
+}
+.container .li4{
+    animation-delay: .8s;
+}
+.container .li5{
+    animation-delay: .9s;
+}
+.container .li6{
+    animation-delay: 1.1s;
+}
+.container .li7{
+    animation-delay: 1.2s;
+}
+.container .li8{
+    animation-delay: 1.3s;
+}
+.container .li9{
+    animation-delay: 1.4s;
+}
+.container .li10{
+    animation-delay: 1.5s;
+}

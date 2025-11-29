@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+</head>
+<body>
+    <header>
+        <h1>Developer</h1>
+        <div class="toggleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="menu"><a href="#">Dropdown<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="menu-list">
+                    <li><a href="#">Product 01</a></li>
+                    <li><a href="#">Product 02</a></li>
+                    <li><a href="#">Product 03</a></li>
+                    <li class="sub-menu"><a href="#">Product 04<i class="fa-solid fa-angle-left"></i></a>
+                        <ul class="sub-menu-list">
+                            <li><a href="#">Sub-Menu 01</a></li>
+                            <li><a href="#">Sub-Menu 01</a></li>
+                            <li><a href="#">Sub-Menu 01</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li class="menu"><a href="#">Blog<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="menu-list">
+                    <li><a href="#">Product 01</a></li>
+                    <li><a href="#">Product 02</a></li>
+                    <li><a href="#">Product 03</a></li>
+                    <li class="sub-menu"><a href="#"><i class="fa-solid fa-angle-right"></i>Product 04</a>
+                        <ul class="sub-menu-list" id="right-menu">
+                            <li><a href="#">Sub-Menu 01</a></li>
+                            <li><a href="#">Sub-Menu 01</a></li>
+                            <li><a href="#">Sub-Menu 01</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <script src="./javascript/index.js"></script>
+</body>
+</html>

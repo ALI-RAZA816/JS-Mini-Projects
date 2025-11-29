@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: #4141ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.humberger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.humberger span{
+    display: inline-block;
+    height:10px;
+    width: 80px;
+    margin: 8px 0;
+    background: #fff;
+    transition: .5s ease;
+}
+
+
+.humberger.active span:nth-child(2){
+    opacity: 0;
+}
+
+
+.humberger.active span:first-child{
+    transform: rotate(45deg) translate(15px, 20PX);
+    /* transform-origin: center; */
+}
+
+.humberger.active span:last-child{
+    transform: rotate(-45deg) translate(18px, -20PX);
+    /* transform-origin: center; */
+}

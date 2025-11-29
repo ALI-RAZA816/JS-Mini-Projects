@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+    font-family: sans-serif;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    text-align: left;
+    background-color: #4169e1;
+    padding: 0 50px;
+}
+
+header h1{
+    color: #fff;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px;
+}
+
+.field{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.field input[type="text"]{
+    max-width: 650px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #4169e1;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #4169e1;
+}
+
+.field button[id="btn"]{
+    height: 40px;
+    min-width: max-content;
+    border: none;
+    outline: none;
+    background-color: #4169e1;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 15px;
+    margin-left: 10px;
+}
+
+
+.field button[id="btn"]:hover{
+    background-color: #2f5ce4;
+}
+
+.container .result{
+    min-height: 40px;
+    max-height: 350px;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #a5a5a5;
+    background-color: #fff;
+    margin-top:20px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 15px 20px;
+}
+
+.result h1{
+    font-size: 20px;
+    color: #333;
+    line-height: 30px;
+}
+
+
+.result h1 span{
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+.result p:nth-child(2){
+    font-size: 16px;
+    color: #333;
+    line-height: 40px;
+}
+
+.result p:nth-child(3),
+.result p:nth-child(4){
+    font-size: 15px;
+    color: #333;
+}
+
+.result p:nth-child(3) strong,
+.result p:nth-child(4) strong,
+.result p:nth-child(5) strong{
+    font-size: 16px;
+    color: #333;
+    margin-right: 5px;
+    line-height: 25px;
+}
+
+.result p:nth-child(4) li,
+.result p:nth-child(5) li{
+    line-height: 20px;
+}
+
+.result .synonyms,
+.result .antonyms{
+    line-height: 40px;
+}
+
+.result button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background-color: #2f5ce4;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: 550;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color .10s;
+}
+
+.result button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.result button:hover{
+    background-color: #4169e1;
+}
+
+
+
+
+@media only screen and (max-width:390px) {
+    header{
+        padding: 0 10px;
+    }
+
+    header h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .field{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .field button{
+        width: 100%;
+        margin: 10px 0;
+        margin-left: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

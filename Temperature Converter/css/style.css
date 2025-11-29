@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: azure;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: sans-serif;
+}
+
+.container{
+    background: #fff;
+    padding: 20px 25px;
+    box-shadow: 0 0  15px 2px rgb(0 ,0 ,0,.3);
+    border-radius: 5px;
+}
+
+.container h1{
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.celsius,
+.fahrenheit,
+.kelvin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+
+.celsius label,
+.fahrenheit label,
+.kelvin label{
+    display: inline-block;
+    font-size:18px;
+    color: #333;
+    font-weight: 550;
+}
+
+.celsius input,
+.fahrenheit input,
+.kelvin input{
+    height: 40px;
+    width:230px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0 15px;
+    border-radius: 3px;
+}

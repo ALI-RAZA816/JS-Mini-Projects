@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Card</title>
+    <!-- bootstrap CSS file  -->
+    <link rel="stylesheet" href="./css/bootstrap.css/bootstrap.css">
+    <!-- jquery JS file  -->
+    <script src="./js/jquery.html.js"></script>
+    <!-- bootstrap JS files  -->
+    <script src="./css/bootstrap.js/bootstrap.bundle.js"></script>
+    <!-- main stylesheet file  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font Icon CSS file  -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+</head>
+<body>
+    <section class="recipe-card d-flex justify-content-center">
+            <div class="container main-container p-0">
+                <div class="row">
+                    <div class="col-12" id="hero-banner">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Delicious Pizza" class="recipe-image">
+                        <h1>Classic Margherita Pizza</h1>
+                    </div>
+                    <div class="col-12" id="stat-col">
+                        <div class="box box1">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Prep Time</span>
+                            <span><b>20 mins</b></span>
+                        </div>
+                        <div class="box box2">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Cook Time</span>
+                            <span><b>15 mins</b></span>
+                        </div>
+                        <div class="box box3">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Servings</span>
+                            <span><b>4 people</b></span>
+                        </div>
+                        <div class="box box4">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Difficulty</span>
+                            <span><b>Medium</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-6" id="ingredients">
+                        <h1><i class="fa-solid fa-basket-shopping"></i>Ingredients</h1>
+                        <div id="ingredients-list">
+                            <div class="box">
+                                <div class="dot"></div>
+                                <span class="metric-units">500g Pizza dough</span>
+                                <span class="imperial-units" style="display: none;">1.1 lb Pizza dough</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot"></div>
+                                <span class="metric-units">400g San Marzano tomatoes</span>
+                                <span class="imperial-units" style="display: none;">14 oz San Marzano tomatoes</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot"></div>
+                                <span class="metric-units">250g Mozzarella di bufala</span>
+                                <span class="imperial-units" style="display: none;">8.8 oz Mozzarella di bufala</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot"></div>
+                                <span class="metric-units">30ml Extra virgin olive oil</span>
+                                <span class="imperial-units" style="display: none;">2 tbsp Extra virgin olive oil</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot"></div>
+                                <span class="metric-units">5g Fresh basil</span>
+                                <span class="imperial-units" style="display: none;">0.2 oz Fresh basil</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot"></div>
+                                <span class="metric-units">5g Sea salt</span>
+                                <span class="imperial-units" style="display: none;">1 tsp Sea salt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6" id="instructions">
+                        <h1><i class="fa-solid fa-chart-column"></i>Instructions</h1>
+                        <div id="instructions-list">
+                            <div class="box">
+                                <div class="dot">1</div>
+                                <span>Preheat your oven to 250°C (480°F). If using a pizza stone, place it in the oven while preheating.</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot">2</div>
+                                <span>Preheat your oven to 250°C (480°F). If using a pizza stone, place it in the oven while preheating.</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot">3</div>
+                                <span>Preheat your oven to 250°C (480°F). If using a pizza stone, place it in the oven while preheating.</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot">4</div>
+                                <span>Preheat your oven to 250°C (480°F). If using a pizza stone, place it in the oven while preheating.</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot">5</div>
+                                <span>Preheat your oven to 250°C (480°F). If using a pizza stone, place it in the oven while preheating.</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot">6</div>
+                                <span>Preheat your oven to 250°C (480°F). If using a pizza stone, place it in the oven while preheating.</span>
+                            </div>
+                            <div class="box">
+                                <div class="dot">7</div>
+                                <span>Preheat your oven to 250°C (480°F). If using a pizza stone, place it in the oven while preheating.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="nutrions-container">
+                    <div class="col-12 d-flex py-4 justify-content-center" id="btn-box" style="border-bottom: 1px solid rgba(204, 204, 204,.50);">
+                        <button id="btn"><i class="fa-solid fa-right-left"></i> Switch to Imperial Units</button>
+                    </div>
+                    <div class="col-12" id="nutrions-boxes">
+                        <h1><i class="fa-solid fa-apple-whole"></i> Nutrition Info (per serving)</h1>
+                        <div class="nutrions">
+                            <div class="box">
+                                <span>850</span>
+                                <span>Calories</span>
+                            </div>
+                            <div class="box">
+                                <span>32g</span>
+                                <span>Protien</span>
+                            </div>
+                            <div class="box">
+                                <span>110g</span>
+                                <span>Carbs</span>
+                            </div>
+                            <div class="box">
+                                <span>28g</span>
+                                <span>Fat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- jquery JS file  -->
+    <script src="./js/jquery.html.js"></script>
+    <!-- main JS file  -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

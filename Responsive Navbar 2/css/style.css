@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+
+header{
+    background: #3d8da8;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: relative;
+}
+
+header h1{
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header ul{
+    display: inline-flex;
+    position: relative;
+}
+
+header ul li{
+    list-style: none;
+    padding: 0 20px;
+    position:relative;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size:15px;
+    font-weight: 550;
+    text-transform:uppercase;
+}
+
+
+header > ul li a i{
+    font-size: 14px;
+    margin: 0 5px;
+    transition: .4s;
+}
+
+header > ul li:hover a i{
+    transform:rotate(180deg);
+}
+
+header > ul li > ul{
+    position:absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    background: #3d8da8;
+    display:none;
+    padding:5px 10px;
+    text-align:left;
+}
+
+header > ul li:hover > ul{
+    display: block;
+}
+
+header > ul li > ul li{
+    position: relative;
+    padding:8px 0;
+    border-top: 1px solid rgb(255,255,255,.20);
+}
+header > ul li > ul li a{
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+header > ul li > ul li a i{
+    float: right;
+}
+
+header > ul li:hover > ul li a i{
+    transform: rotate(0deg);
+}
+
+header ul li >ul li >ul{
+    position: absolute;
+    top: -4px;
+    left: 138px;
+}
+
+.icon i{
+    color: #fff;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.input{
+    position: absolute;
+    top: 128px;
+    right: 56px;
+    background: #3d8da8;
+    border-radius: 5px;
+    padding: 0 10px;
+    width:270px;
+    height:60px;
+    opacity: 0;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input.active{
+    top:90px;
+    opacity: 1;
+}
+
+.input input{
+    height: 40px;
+    width:100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding:0 10px;
+    color: #333;
+    border-radius:5px;
+}
+
+.input::after{
+    height: 15px;
+    width: 15px;
+    content: "";
+    position: absolute;
+    top:-5px;
+    right:20px;
+    background: #3d8da8;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+ul#show-list.active{
+    display: block;
+}
+#angle-down.active{
+    transform: rotate(180deg);
+}
+
+#show-second-list.show{
+    display: block;
+}
+#angle1.show{
+    transform: rotate(180deg);
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    font-size: 25px;
+    color: #fff;
+}
+
+@media screen and (max-width:1025px) {
+    header ul{
+        position: absolute;
+        top:100%;
+        left: -100%;
+        width: 350px;
+        background: #3d8da8;
+        display: block;
+        height: 100vh;
+        transition: .4s;
+        padding: 15px 25px;
+    }
+
+    header ul.active{
+        left:0;
+    }
+
+    header ul li{
+        padding: 10px 20px;
+        cursor: pointer;
+        border-bottom: 1px solid rgb(255,255,255,.50);
+    }
+
+    header ul li a i{
+        float: right;
+    }
+
+    header ul li > ul,
+    header ul li > ul li > ul {
+        position:static;
+        height: auto;
+    }
+
+    header ul li > ul li > ul {
+        left: 0;
+        display: block;
+    }
+
+    header ul li > ul li:hover > ul{
+        display: block;
+    }
+
+    header ul li > ul li,
+    header ul li > ul li > ul li{
+        border: none;
+    }
+
+    header ul li > ul li a i{
+        transform: rotate(90deg) !important;
+    }
+
+    header > ul li:hover > ul{
+        display:none;
+    }
+
+    header > ul li:hover a i{
+        transform:rotate(0deg);
+    }
+
+    .menu-icon{
+        display: block;
+    }
+}
+
+@media screen and (max-width:430px){
+    header{
+        padding:20px 40px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+
+    header ul{
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+

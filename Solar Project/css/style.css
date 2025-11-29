@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    min-height: 100vh;
+    overflow: hidden;
+    perspective:800px;
+    position:relative;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style:preserve-3d;
+    z-index: 999;
+    transform: rotate(30deg,30deg);
+}
+
+.sun{
+    height: 130px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position:absolute;
+    background-image: url('../assets/img/sun-img.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mercery,
+.venus,
+.earth,
+.mars,
+.jupiter,
+.saturan,
+.uranus,
+.neptune{
+    height:180px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position:absolute;
+}
+
+.mercery::after,
+.venus::after,
+.earth::after,
+.mars::after,
+.jupiter::after,
+.saturan::after,
+.uranus::after,
+.neptune::after{
+    position: absolute;
+    content: "";
+    height: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top:35px;
+    background-image: url('../assets/img/mercery-planet.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    animation: mercery 1s linear 1s infinite;
+}
+
+.mercery{
+    animation: mercery 1s linear 1s infinite;
+}
+
+@keyframes mercery {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.venus{
+    height: 250px !important;
+    aspect-ratio: 1;
+    animation: venus 5s linear 1s infinite;
+}
+
+@keyframes venus {
+    from{
+        transform: rotate(360deg);
+    }to{
+        transform: rotate(0deg);
+    }
+}
+
+.venus::after{
+    height:30px;
+    aspect-ratio: 1;
+    top: 43px;
+    background-image: url('../assets/img/venus-planet.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: venus 5s linear 1s infinite;
+}
+
+.earth{
+    height: 320px !important;
+    aspect-ratio: 1;
+    animation: earth 20s linear 1s infinite;
+}
+
+@keyframes earth {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.earth::after{
+    height:60px;
+    aspect-ratio: 1;
+    left:0;
+    top:38px;
+    background-image: url('../assets/img/earth-planet.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: earth 20s linear 1s infinite;
+}
+
+.mars{
+    height: 400px !important;
+    aspect-ratio: 1;
+    animation: mars 15s linear 1s infinite;
+}
+@keyframes mars {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.mars::after{
+    height:55px;
+    aspect-ratio: 1;
+    top:50px;
+    left: 15px;
+    background-image: url('../assets/img/mars-planet.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: mars 15s linear 1s infinite;
+}
+
+.jupiter{
+    height:480px !important;
+    aspect-ratio: 1;
+    animation: jupiter 10s linear 1s infinite;
+}
+
+@keyframes jupiter {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.jupiter::after{
+    height:65px;
+    aspect-ratio: 1;
+    top:60px;
+    left:16px;
+    background-image: url('../assets/img/jupiter-planet.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: jupiter 10s linear 1s infinite;
+}
+
+.saturan{
+    height: 560px !important;
+    aspect-ratio: 1;
+    animation: saturan 12s linear 1s infinite;
+}
+
+@keyframes saturan {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.saturan::after{
+    height:70px;
+    top:80px;
+    left: 20px;
+    aspect-ratio: 1;
+    background-image: url('../assets/img/saturn-planet.png');
+    background-position: center;
+    background-size:  contain;
+    background-repeat: no-repeat;
+    animation: saturan 12s linear 1s infinite;
+}
+
+.uranus{
+    height: 650px !important;
+    aspect-ratio: 1;
+    animation: uranus 50s linear 1s infinite;
+}
+
+@keyframes uranus {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.uranus::after{
+    height:40px;
+    top:100px;
+    left: 50px;
+    aspect-ratio: 1;
+    background-image: url('../assets/img/uranus-planet.png');
+    background-position: center;
+    background-size:  contain;
+    background-repeat: no-repeat;
+    animation: uranus 50s linear 1s infinite;
+}
+
+.neptune{
+    height: 750px !important;
+    aspect-ratio: 1;
+    animation: neptune 80s linear 1s infinite;
+}
+
+@keyframes neptune {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.neptune::after{
+    height:30px;
+    top: 116px;
+    left: 73px;
+    aspect-ratio: 1;
+    background-image: url('../assets/img/nepture-planet.png');
+    background-position: center;
+    background-size:  contain;
+    background-repeat: no-repeat;
+    animation: neptune 80s linear 1s infinite;
+}
+

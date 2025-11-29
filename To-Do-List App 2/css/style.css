@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    text-align: center;
+    background-color: #fff;
+    border-radius:5px;
+    margin: 20px auto;
+    max-width:550px;
+    box-shadow: 0 0 5px  rgb(0,0,0,.50);
+    padding: 15px 20px;
+}
+
+.container h1{
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.to-do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do input[type='text'],
+.to-do select,
+.to-do input[type='date']{
+    height: 35px;
+    width:130px;
+    padding: 0 10px;
+    border: 1px solid #6e6c6c;
+    outline: none;
+    border-radius: 3px;
+    margin-right: 8px;
+    font-size: 15px;
+}
+
+.to-do button{
+    height: 35px;
+    width: 130px;
+    border: none;
+    outline: none;
+    background: royalblue;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#tasklist{
+    padding: 15px 5px;
+}
+
+#tasklist li{
+    list-style-type: none;
+    text-align: left;
+    color: #333;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 0;
+    margin-bottom:10px;
+}
+#tasklist li button{
+    height: 35px;
+    width: 120px;
+    color: #fff;
+    background: palevioletred;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    float: right;
+    clear: both;
+    cursor: pointer;
+}
+

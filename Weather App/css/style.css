@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:"Roboto", serif;
+    background: #333;
+}
+
+
+.container{
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 380px;
+    /* height: 500px; */
+    padding:20px 25px;
+}
+
+.input{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container #error{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    display: none;
+}
+
+.input input{
+    height:50px;
+    width: 100%;
+    border: none;
+    background: #fff;
+    border-radius: 50px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input i{
+    background: #fff;
+    color: #333;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.temperature{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.temperature img{
+    height:100px;
+    margin-top: 20px;
+}
+
+.temperature h1#temp{
+    color: #fff;
+    font-size: 60px;
+    line-height: 100px;
+}
+
+
+.temperature h2#city{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+    /* line-height: 100px; */
+}
+
+.wind{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.humidity{
+    display: flex;
+    align-items: center;
+}
+
+.windspeed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.humidity img,
+.windspeed img{
+    height: 50px;
+    margin: 0 10px;
+}
+
+.humidity h1,
+.windspeed h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.temperature,
+.wind{
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background: linear-gradient(135deg, #00feba, #5b548a);
+    }
+    
+    .container{
+        justify-content: flex-start;
+        height: 100vh;
+        width:100%;
+        border-radius:0px;
+        padding:20px 10px;
+    }
+    .temperature{
+        margin: 70px 0;
+    }
+    .temperature,.wind{
+        height: 100%;
+    }
+
+}

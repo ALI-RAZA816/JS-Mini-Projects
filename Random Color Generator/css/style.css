@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h1{
+    margin: 25px 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.container .color{
+    height:150px;
+    width: 250px;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    line-height: 150px;
+    font-size: 17px;
+    color: #fff;
+}
+
+

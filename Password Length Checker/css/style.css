@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+form{
+    height:50px;
+    width: 300px;
+    border: 1.5px solid #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+form input{
+    background:none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height:40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 15px;
+}
+
+form button{
+    height:35px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size:15px;
+    color: #333;
+    cursor: pointer;
+    line-height:35px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.container #strengthmsg{
+    display:none;
+}
+
+.container #strengthmsg #msg{
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    display: inline-block;
+    margin: 5px 0 0 10px;
+}

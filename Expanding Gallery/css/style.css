@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .item{
+    width: 50px;
+    height: 500px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    transition:  width .4s ease-in;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+.container .item .content{
+    position: absolute;
+    bottom: 20px;
+    padding: 0 10px;
+    left: 0;
+    opacity: 0;
+    transition: opacity .8s ease-in;
+}
+.container .item .content h1{
+    font-size: 25px;
+    margin: 15px 0;
+}
+.item.active{
+    width: 780px;
+}
+.item.active .content{
+    opacity: 1;
+}
+.item:first-child{
+    background-image: url('../images/pexels-apasaric-325185.jpg');
+}
+.item:nth-child(2){
+    background-image: url('../images/pexels-christian-heitz-285904-842711.jpg');
+}
+.item:nth-child(3){
+    background-image: url('../images/pexels-eberhardgross-443446.jpg');
+}
+.item:nth-child(4){
+    background-image: url('../images/pexels-maxfrancis-2246476.jpg');
+}
+.item:nth-child(5){
+    background-image: url('../images/pexels-pixabay-326055.jpg');
+}
